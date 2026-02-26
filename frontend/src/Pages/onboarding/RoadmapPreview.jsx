@@ -175,15 +175,19 @@ export default function RoadmapPreview() {
 
 function InfoCard({ icon, title, value }) {
   return (
-    <div className="p-6 rounded-3xl bg-black/20 border border-white/5 flex items-center gap-5 hover:border-white/20 transition-colors">
-      <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-white/5 text-gray-100 shrink-0">
-        {icon}
-      </div>
-      <div>
-        <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">
-          {title}
-        </p>
-        <h3 className="text-lg font-bold text-slate-100 mt-0.5 leading-tight">
+    <div className="p-6 rounded-3xl bg-black/20 border border-white/5  hover:border-white/20 transition-colors"> 
+      <div className="flex items-center gap-3">
+        <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-white/5 text-gray-100 shrink-0">
+          {icon}
+        </div>
+        <div>
+          <p className="text-lg font-bold text-slate-100 mt-0.5 uppercase leading-tight">
+            {title}
+          </p>
+        </div>
+        </div>
+      <div className="mt-4">
+         <h3 className="text-sm font-medium text-gray-500 tracking-wide">
           {value}
         </h3>
       </div>
