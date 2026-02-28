@@ -39,7 +39,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="bg-slate-900/60 backdrop-blur-xl border-b border-white/10 fixed w-full z-50 shadow-lg shadow-black/20">
+    <nav className="bg-neutral-700 backdrop-blur shadow-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -52,8 +52,8 @@ export default function Navbar() {
               alt="logo"
               src="/logo.png"
             />
-            <span className="text-xl font-bold text-gray-100 drop-shadow-[0_0_3px_rgba(255,255,255,0.9)] transition-colors">
-              Skill<span className="text-gray-400">Synapse</span>
+            <span className="text-xl font-bold text-gray-950 drop-shadow-[0_0_3px_rgba(255,255,255,0.9)]">
+              Skill<span className="text-gray-800">Synapse</span>
             </span>
           </div>
 
